@@ -1,0 +1,55 @@
+Instruções
+Desenvolva, individualmente ou em dupla (osdois entregam), uma aplicação de WPS em C# para cadastrar e gerenciar produtos. Utilize ADO.NET para conectar a aplicação ao banco de dados e persistir as informações.
+
+Objetivo
+A aplicação deve demonstrar:
+
+Conexão com o banco de dados usando ADO.NET;
+Operações CRUD: inserir, listar, buscar, atualizar e excluir registros;
+Prevenção contra SQL Injection por meio de comandos parametrizados;
+Tratamento de exceções relacionadas ao banco de dados.
+Tema: Cadastro de Produtos
+Crie uma tabela Produtos com os campos:
+
+Id;
+Nome;
+Preco;
+Estoque;
+Categoria.
+Implemente um menu com estas opções:
+
+Inserir produto;
+Listar produtos;
+Buscar produto por ID;
+Atualizar produto;
+Excluir produto;
+Sair.
+Requisitos técnicos
+Utilize SQL Server, LocalDB ou SQLite;
+Crie e entregue o script .sql usado para criar a tabela;
+Mantenha a connection string no arquivo appsettings.json;
+Crie a classe Produto;
+Crie a classe ProdutoRepository, responsável pelo acesso ao banco;
+Implemente os métodos Inserir, Listar, BuscarPorId, Atualizar e Excluir;
+Use ExecuteNonQuery nas operações INSERT, UPDATE e DELETE;
+Use ExecuteReader nas consultas SELECT;
+Faça o mapeamento manual dos dados retornados pelo DataReader para objetos Produto;
+Use comandos SQL parametrizados em todas as operações;
+Trate as exceções relacionadas ao banco de dados;
+Registre em arquivo as operações realizadas pela aplicação.
+Entrega
+Envie o link do repositório Git com:
+
+Código-fonte completo;
+Script .sql para criação da tabela;
+Arquivo README.md com instruções para configurar e executar o projeto;
+Prints de pelo menos três operações funcionando.
+A apresentação deverá durar de 3 a 5 minutos em video entregue
+
+Critérios de avaliação
+Funcionamento completo do CRUD: 35%;
+Uso correto de SQL parametrizado: 25%;
+Organização e separação entre interface e Repository: 20%;
+Tratamento de erros: 10%;
+Apresentação e demonstração do sistema : 10%.
+Bônus: testes unitários, uso de transações ou implementação de soft delete.
